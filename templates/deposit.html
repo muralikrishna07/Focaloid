@@ -1,0 +1,23 @@
+{% extends 'home.html' %} {% block main %}
+<style>
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>Deposit</h1>
+        <div class="container">
+            <form action="" method="post">
+                {% csrf_token%} {{form.as_p}}
+                <input type="submit" class="btn btn-primary">
+            </form>
+        </div>
+    </div>
+
+
+
+</body>
+
+{% endblock %}

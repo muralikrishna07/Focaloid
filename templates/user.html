@@ -1,0 +1,19 @@
+{% extends 'home.html' %} {% block main %}
+<style>
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <h1>Welcome</h1>
+    <div class="container">
+        <a href="{%url 'balance'%}" class="btn btn-primary">Check Balance </a><br><br>
+        <a href="{%url 'transfer'%}" class="btn btn-primary">Transfer </a><br><br>
+        <a href="{%url 'deposit'%}" class="btn btn-primary">Deposit </a><br><br>
+        <a href="{%url 'withdraw'%}" class="btn btn-primary">Withdraw </a><br><br>
+    </div>
+</body>
+
+{% endblock %}
